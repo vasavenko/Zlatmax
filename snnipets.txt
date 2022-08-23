@@ -202,7 +202,7 @@
 		"scope": "scss",
 		"prefix": "mbl",
 		"body": [
-			"&:not(:last-child) {margin-bottom: $1px;}"
+			"&:not(:last-child) {margin-123bottom: rem($1);}"
 		],
 		"description": "Добавляет нижний отступ исключая последний объект"
 	},

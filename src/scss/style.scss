@@ -134,6 +134,19 @@ body {
 // Подключение стилей отдельных блоков
 @import 'header';
 @import 'footer';
+@import 'product-slider';
 
 // Подключение стилей отдельных страниц
 @import 'home';
+
+.page {
+  // .page_home
+  &_home {
+  }
+  // .page__main-block
+  &__main-block {
+  }
+  // .page__catalog-cards
+  &__catalog-cards {
+  }
+}

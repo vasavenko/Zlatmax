@@ -140,6 +140,7 @@
       top: 0;
       left: -100%;
       overflow: auto;
+      // background-color: rgba(20, 20, 20, 0.95);
       background-color: $mainDarkColor;
       padding: 0 rem(20) rem(50) rem(20);
       @include adaptiveValue('padding-top', 125, 110, 991.98, 320);
@@ -424,7 +425,9 @@
   position: relative;
   background-color: $mainDarkColor;
   color: #fff;
-
+  @media (min-width: $tablet) {
+    z-index: 2;
+  }
   // .catalog-header__container
   &__container {
   }
