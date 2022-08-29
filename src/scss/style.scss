@@ -134,10 +134,13 @@ body {
 // Подключение стилей отдельных блоков
 @import 'header';
 @import 'footer';
-@import 'product-slider';
-
 // Подключение стилей отдельных страниц
 @import 'home';
+@import 'product-slider';
+@import 'product-new';
+@import 'article';
+@import 'articles';
+@import 'light';
 
 .page {
   // .page_home

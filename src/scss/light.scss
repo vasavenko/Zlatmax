@@ -1,0 +1,106 @@
+.light-blok {
+  // .light-blok__container
+  &__container {
+    display: grid;
+    gap: rem(30);
+    @media (min-width: $mobileSmall) {
+      grid-template-columns: repeat(auto-fit, minmax(rem(600), 1fr));
+    }
+  }
+  // .light-blok__item
+  &__item {
+  }
+}
+.item-light {
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  min-height: rem(290);
+  transition: box-shadow 0.3s ease 0s;
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    }
+  }
+  // .item-light__body
+  &__body {
+    // display: flex;
+    // flex-direction: column;
+    // flex: 1 1 auto;
+    position: relative;
+    z-index: 2;
+    @include adaptiveValue('padding', 30, 20);
+  }
+  // .item-light__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: em(30, 24);
+    }
+  }
+  // .item-light__link-title
+  &__link-title {
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: math.div(34, 24);
+    display: inline-block;
+    &::after {
+      content: '';
+      width: rem(70);
+      height: rem(2);
+      display: block;
+      margin: rem(15) 0 0 0;
+      background-color: $mainOrange;
+      transition: width 0.8s ease 0s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // .item-light__text
+  &__text {
+    // flex: 1 1 auto;
+    font-size: rem(18);
+    line-height: math.div(27, 18);
+    &:not(:last-child) {
+      margin-bottom: em(50, 18);
+    }
+    @media (min-width: em(710)) {
+      max-width: rem(260);
+    }
+  }
+  // .item-light__button
+  &__button {
+    flex: 0 0 50px;
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: math.div(46, 18);
+    padding: 0px rem(103);
+    // max-width: rem(316);
+    @media (max-width: em(709)) {
+      width: 100%;
+    }
+  }
+  // .item-light__image
+  &__image {
+    text-align: right;
+    align-items: flex-end;
+    transform: translate(0, 8%) rotate(0deg);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      max-width: 100%;
+    }
+    // @media (min-width: $mobileSmall) {
+    @media (min-width: em(710)) {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+    }
+  }
+}

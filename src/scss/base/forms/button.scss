@@ -3,14 +3,13 @@
 
 .button {
   display: inline-block;
-  padding: 0px 0px;
   background: $mainOrange;
   box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
   border-radius: rem(3);
   font-weight: 600;
   font-size: rem(20);
   text-align: center;
-  padding: rem(9) rem(52);
+  padding: rem(9) rem(10);
   line-height: math.div(32, 20);
   transition: box-shadow 0.3s ease 0s;
   color: #fff;

@@ -161,6 +161,7 @@
   }
   // .slide-main-block__button
   &__button {
+    padding: rem(9) rem(52);
     @media (max-width: $mobileSmall) {
       width: 100%;
       justify-content: center;
@@ -339,9 +340,6 @@
 //====================================================================================================
 
 .catalog-cards {
-  @include adaptiveValue('padding-top', 100, 40);
-  @include adaptiveValue('padding-bottom', 70, 40);
-
   // .catalog-cards__container
   &__container {
     display: grid;
@@ -370,12 +368,6 @@
     position: relative;
     z-index: 2;
     @include adaptiveValue('padding', 30, 20);
-
-    // @media (max-width: $mobileSmall) {
-    //   &:not(:last-child) {
-    //     margin-bottom: rem(20);
-    //   }
-    // }
   }
   // .item-catalog-cards__title
   &__title {
@@ -457,7 +449,30 @@
   }
 }
 //====================================================================================================
-.hits-products {
-  @include adaptiveValue('padding-top', 50, 40);
-  @include adaptiveValue('padding-bottom', 120, 40);
+.page {
+  // .page__catalog-cards
+  &__catalog-cards {
+    @include adaptiveValue('padding-top', 100, 40);
+    @include adaptiveValue('padding-bottom', 120, 30);
+  }
+  // .page__hits-products
+  &__hits-products {
+    @include adaptiveValue('padding-bottom', 50, 20);
+  }
+  // .page__new-products
+  &__new-products {
+    @include adaptiveValue('padding-bottom', 100, 40);
+  }
+  // .page__articles
+  &__articles {
+    @include adaptiveValue('padding-bottom', 120, 40);
+  }
+  // .page__light-blok
+  &__light-blok {
+    @include adaptiveValue('padding-bottom', 120, 40);
+  }
+  // .page__light-products
+  &__light-products {
+    @include adaptiveValue('padding-bottom', 120, 40);
+  }
 }
